@@ -7,7 +7,7 @@ defmodule Coherence.Mixfile do
     [
       app: :coherence,
       version: @version,
-      elixir: "~> 1.3",
+      elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       build_embedded: Mix.env() == :prod,
@@ -46,7 +46,7 @@ defmodule Coherence.Mixfile do
 
   defp deps do
     [
-      {:ecto, "~> 2.0"},
+      {:ecto, "~> 3.1"},
       {:comeonin, "~> 4.0"},
       {:bcrypt_elixir, "~> 1.1"},
       {:phoenix, "~> 1.3"},
